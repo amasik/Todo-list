@@ -1,28 +1,15 @@
+
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        todolist
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-     
-    </div>
+<section class="container">
+  <div>
+    <h1 class="title">Todo list</h1>
+    <nuxt-link class="subtitle" to="/create">Create</nuxt-link>
+    <nuxt-link class="subtitle" to="/update">Update</nuxt-link>
+    <nuxt-link class="subtitle" to="/delete">Delete</nuxt-link>
+    <nuxt-link class="subtitle" to="/read">Read</nuxt-link>
+  </div>
   </section>
 </template>
-
-<script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  }
-}
-</script>
-
 <style>
 .container {
   min-height: 100vh;
@@ -31,7 +18,6 @@ export default {
   align-items: center;
   text-align: center;
 }
-
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
@@ -40,10 +26,9 @@ export default {
   color: #35495e;
   letter-spacing: 1px;
 }
-
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 12px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
@@ -53,4 +38,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
