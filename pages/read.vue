@@ -2,11 +2,10 @@
 <template>
 <section class="container">
   <div>
-    <h1 class="title">Todo list</h1>
-    <nuxt-link class="subtitle" to="/create">Create</nuxt-link>
-    <nuxt-link class="subtitle" to="/update">Update</nuxt-link>
-    <nuxt-link class="subtitle" to="/delete">Delete</nuxt-link>
-    <nuxt-link class="subtitle" to="/read">Read</nuxt-link>
+    <h1 class="title">Read</h1>
+    <input type="number" min="0" >
+    <h2 class="subtitle">Ok</h2>
+    <nuxt-link class="subtitle" to="/">Retour</nuxt-link>
   </div>
 
   </section>

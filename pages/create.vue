@@ -2,16 +2,20 @@
 <template>
 <section class="container">
   <div>
-    <h1 class="title">Todo list</h1>
-    <nuxt-link class="subtitle" to="/create">Create</nuxt-link>
-    <nuxt-link class="subtitle" to="/update">Update</nuxt-link>
-    <nuxt-link class="subtitle" to="/delete">Delete</nuxt-link>
-    <nuxt-link class="subtitle" to="/read">Read</nuxt-link>
+    <h1 class="title">Create</h1>
+    <nuxt-link class="subtitle" to="/">Retour</nuxt-link>
   </div>
 
   </section>
 </template>
 
+<script>
+export default {
+  async fetch ({ store, params }) {
+    await store.dispatch('CREATE');
+  }
+}
+</script>
 
 <style>
 .container {
